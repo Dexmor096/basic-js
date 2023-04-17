@@ -21,7 +21,7 @@ function transform(arr) {
   
   let resultArray = arr;
   console.debug(arr);
-  if (!arr.isArray === true) {throw new NotImplementedError("'arr' parameter must be an instance of the Array!");}
+  if (!Array.isArray(arr)) {throw new Error("'arr' parameter must be an instance of the Array!");}
   if(arr.length === 0) {return arr}
   if (arr.includes(doubleNext)) {
     
